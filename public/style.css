@@ -1,0 +1,117 @@
+body{ 
+    margin: 0;
+    padding: 0;
+}
+
+#video-grid{
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap; 
+    
+}
+video{ 
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    padding: 10px;
+    margin: 3px;
+    background-color: rgb(116, 141, 133);
+}    
+
+
+.main{
+    height: 100vh;
+    display: flex;
+}
+
+.main__left{
+    flex: 0.8;
+    display: flex;
+    flex-direction:column;
+    background-color:rgb(151, 74, 60);
+}
+
+.main__right{
+    flex: 0.2;
+    display: flex;
+    flex-direction:column;
+    background-color: #c0b093;
+    border-left: 1px solid #8989a7;
+}
+
+.main__videos{
+    flex-grow: 1;
+    background-color: rgb(151, 74, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.main__controls {
+    color: #e9e0c5;
+    background-color: #4e3b29;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+.main__controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+    
+    
+}    
+
+
+
+.main__controls__button i {
+    font-size: 24px;
+}
+
+
+
+.main__controls__button:hover {
+    background-color: #343434;
+    border-radius: 5px;
+}
+
+
+.main__header {
+    padding-top: 5px;
+    color: #3a1921;
+    text-align: center;
+}
+
+.main__chat__window {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.main__message__container {
+    padding: 22px 12px;
+    display: flex;
+}
+
+
+.main__message__container input {
+    flex-grow: 1;
+    background-color: rgb(180, 167, 167);
+    border-radius: 10px;
+    color: #303d74;
+}
+
+.messages{
+    color: rgb(45, 88, 83);
+    list-style: none;
+}
+
+.Unmute, .Pause {
+    color: #CC3B33;
+}
